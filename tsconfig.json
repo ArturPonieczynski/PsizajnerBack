@@ -19,7 +19,7 @@
     "noFallthroughCasesInSwitch": false,
     "preserveConstEnums": true,
     "downlevelIteration": true,
-    "comment": "lib: ['es2017']",
+    "lib": ["es2017"],
     "moduleResolution": "Node",
     "esModuleInterop": true
   }
