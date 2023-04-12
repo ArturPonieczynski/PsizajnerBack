@@ -16,6 +16,11 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "preserveConstEnums": true,
+    "downlevelIteration": true,
+    "lib": ["es2017"],
+    "moduleResolution": "Node",
+    "esModuleInterop": true
   }
 }
