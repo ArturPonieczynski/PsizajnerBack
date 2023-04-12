@@ -12,4 +12,16 @@ export class MailService {
       html,
     });
   }
+
+  async confirmationMail(
+    to: string,
+    subject: string,
+    html: string,
+  ): Promise<any> {
+    await this.mailerService.sendMail({
+      to,
+      subject: 'Psizajner - Confirmation code.',
+      html,
+    });
+  }
 }

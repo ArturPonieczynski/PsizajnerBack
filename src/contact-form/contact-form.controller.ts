@@ -1,6 +1,6 @@
-import { Body, Controller, Inject, Post } from "@nestjs/common";
-import { ContactFormService } from "./contact-form.service";
-import { SendMailDto } from "./dto/send-mail.dto";
+import { Body, Controller, Inject, Post } from '@nestjs/common';
+import { ContactFormService } from './contact-form.service';
+import { SendMailDto } from './dto/send-mail.dto';
 
 @Controller('/shop/contact-form')
 export class ContactFormController {
@@ -9,9 +9,7 @@ export class ContactFormController {
   ) {}
 
   @Post('/send')
-  sendMail(
-    @Body() message: SendMailDto,
-  ): Promise<any> {
+  sendMail(@Body() message: SendMailDto): Promise<any> {
     return this.contactFormService.sendMail(message);
   }
 }

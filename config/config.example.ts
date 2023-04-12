@@ -11,4 +11,5 @@
 //     hostSMTP: 'localhost',
 //     portSMTP: 2500,
 //     emailSendFromSMTP: 'admin@example.com',
+//     hashSalt: 'salt',
 // };
